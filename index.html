@@ -985,15 +985,21 @@ function renderDetail(id) {
  dc.innerHTML = html;
 }
 function reset() {
- selected = null;
- document.querySelectorAll('.distress-card').forEach(c => {
-   c.classList.remove('active', 'dimmed');
- });
- document.getElementById('flowEmpty').style.display = 'flex';
- document.getElementById('flowContent').style.display = 'none';
- document.getElementById('detailEmpty').style.display = 'block';
- document.getElementById('detailContent').style.display = 'none';
+  selected = null;
+  document.querySelectorAll('.distress-card').forEach(c => {
+    c.classList.remove('active', 'dimmed');
+  });
+  document.getElementById('flowEmpty').style.display = 'flex';
+  document.getElementById('flowContent').style.display = 'none';
+  document.getElementById('detailEmpty').style.display = 'block';
+  document.getElementById('detailContent').style.display = 'none';
 }
+</script>
+
+<div style="background:#161820; border-top:1px solid #2a2d3a; padding:16px 32px; text-align:center;">
+  <a href="index.html" style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#7a7d8e; text-decoration:none; border:1px solid #2a2d3a; padding:6px 16px; border-radius:3px;">← Field Guide Home</a>
+</div>
+
 </script>
 </body>
 </html>
